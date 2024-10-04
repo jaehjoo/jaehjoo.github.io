@@ -1,0 +1,8 @@
+<ul class="tag-filter-view">
+  {% assign tags = site.tags %}
+  {% for tag in tags %}
+    <li class="unsel-tag-filter-view">
+      <a href="#{{ tag[0] }}">#{{ tag[0] }} {{ tag[1].size }}</a>
+    </li>
+  {% endfor %}
+</ul>

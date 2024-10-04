@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #575757;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: #575757;
+    border-bottom: 1px solid #4acba7;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+span {
+    display: flex;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.home-link {
+    display: flex;
+    width: 11em;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    margin-right: 5%;
+    margin-left: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.menu a {
+    color: #4acba7;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 3%;
+}
+
+.menu a:hover {
+    color:orange;
+    transition: color 0.5s;
+}
+
+.tag-filter-view {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.tag-filter-view a {
+    font-family: Verdana;
+    font-size: 11px;
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 17%;
+    color:aliceblue;
+    text-decoration: none;
+    background-color:darkslategrey;
+}
+
+.tag-filter-view a:hover {
+    border-bottom: 30px;
+    border-color:aqua;
+    transition: border-bottom 0.5s;
+}
+
+#about-frame {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+#about-frame h1 {
+    color: rgb(207, 204, 204);
+}
+
+.post-list {
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 0;
+}
+
+.post-list li {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(193, 181, 181);
+    border-radius: 5%;
+}
+
+.post-list li:hover {
+    background-color:dodgerblue;
+    transition: background-color 0.5s;
+}
+
+.post-list li img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.single-post {
+    color: rgb(207, 204, 204);
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 25px;
+}
+
+.single-post h1 {
+    font-family:'Segoe UI';
+}
+
+.single-post p {
+    font-family: 'BookkMyungjo-Bd';
+    font-size: 17px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.pagination .page-button {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: rgb(46, 44, 44);
+}
+
+.pagination .page-button:hover {
+    background-color: #4acba7;
+    transition: background-color 0.5s;
+}
+
+.pagination #page-info {
+    width: 45px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
+    color: rgb(177, 170, 170);
+}
+
+footer {
+    width: 100%;
+    text-align: left;
+    margin-top: 80%;
+    border-top : 1px dashed #4acba7;
+    padding: 0;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+    color: rgb(159, 150, 150)
+}
+
+blockquote {
+    border-left: 4px solid yellow;
+    margin: 1em 0;
+    padding-left: 1em;
+    font-style: oblique;
+    font-weight: bold;
+}

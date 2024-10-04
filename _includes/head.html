@@ -1,0 +1,15 @@
+<header class="navbar">
+    <span>
+        <a class="home-link" href="/">
+            <img class="profile" src={{ "assets/images/profile.jpg" }}>
+            <span class="site-name">Jaehjoo Record</span>
+        </a>
+    </span>
+    <nav class="menu">
+        {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="menu-nav"{% endif %}>
+                {{ item.name }}
+            </a>
+        {% endfor %}
+    </nav>
+</header>
