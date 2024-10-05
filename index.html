@@ -5,7 +5,7 @@ title: Jaehjoo Record
 {% include tagsBar.html %}
 <ul class="post-list">
     {% for post in site.posts %}
-    <li class="post" data-tags="{{ post.tags | join: ' '}}" onclick="loadPost('{{post.title}}', '{{post.content | escape | strip_newlines | json }}')">
+    <li class="post" data-tags="{{ post.tags | join: ' '}}" onclick="loadPost('{{post.title}}', '{{post.content | escape | strip_newlines | json }}', '{{ post.url }}')">
         <img class="post-image" src={{ site.drive }}{{ post.image }}>
         <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt }}</p>
