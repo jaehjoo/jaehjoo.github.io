@@ -178,8 +178,8 @@ span {
     font-size: 17px;
 }
 
-.single-post table {
-    border-color: white;
+.single-post table, th, td {
+    border: 1px solid white
 }
 
 .pagination {
